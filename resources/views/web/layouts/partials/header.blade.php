@@ -15,7 +15,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-3 fh5co_padding_menu">
-                <img src="images/logo.png" alt="img" class="fh5co_logo_width"/>
+                <a class="d-inline-block" href="{{ route('web.pages.home.index') }}">
+                    <img src="{{ asset('web/images/logo.png') }}" alt="img" class="fh5co_logo_width"/>
+                </a>
             </div>
             <div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
                 <div class="text-center d-inline-block">
@@ -33,7 +35,7 @@
                 <div class="text-center d-inline-block">
                     <a href="https://fb.com/fh5co" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-facebook"></i></div></a>
                 </div>
-                <!--<div class="d-inline-block text-center"><img src="images/country.png" alt="img" class="fh5co_country_width"/></div>-->
+                <div class="d-inline-block text-center"><img src="{{ asset('web/images/country.png') }}" alt="img" class="fh5co_country_width"/></div>
                 <div class="d-inline-block text-center dd_position_relative ">
                     <select class="form-control fh5co_text_select_option">
                         <option>English </option>
@@ -56,14 +58,14 @@
             <a class="navbar-brand" href="#"><img src="images/logo.png" alt="img" class="mobile_logo_width"/></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item {{ request()->routeIs('web.pages.home.index') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ route('web.pages.home.index') }}">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                        <a class="nav-link {{ request()->routeIs('web.pages.blog.index') ? 'active' : '' }}" href="{{ route('web.pages.blog.index') }}">Blog <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="single.html">Single <span class="sr-only">(current)</span></a>
+                    <li class="nav-item {{ request()->routeIs('web.pages.blog.detail') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ route('web.pages.blog.detail') }}">Single <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown"
@@ -83,8 +85,8 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="Contact_us.html">Contact <span class="sr-only">(current)</span></a>
+                    <li class="nav-item {{ request()->routeIs('web.pages.contact.index') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ route('web.pages.contact.index') }}">Contact <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
