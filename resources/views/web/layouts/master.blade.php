@@ -16,6 +16,7 @@
         <link href="{{ asset('web/css/owl.theme.default.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Bootstrap CSS -->
         <link href="{{ asset('web/css/style_1.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('web/css/my_custom_style.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Modernizr JS -->
         <script src="{{ asset('web/js/modernizr-3.5.0.min.js') }}"></script>
         @yield('styles')
