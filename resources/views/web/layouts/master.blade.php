@@ -19,7 +19,7 @@
         <link href="{{ asset('web/css/my_custom_style.css') }}" rel="stylesheet" type="text/css"/>
         <!-- Modernizr JS -->
         <script src="{{ asset('web/js/modernizr-3.5.0.min.js') }}"></script>
-        @yield('styles')
+        @yield('page-style')
     </head>
     <body class="{{ request()->routeIs('web.pages.blog.detail') ? 'single' : '' }}">
         @include('web.layouts.partials.header')

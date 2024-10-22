@@ -27,6 +27,7 @@
         <!-- Custom Fonts -->
         <link href="{{ asset('admin/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 
+        @yield('page-style')
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -62,14 +63,10 @@
         <!-- Metis Menu Plugin JavaScript -->
         <script src="{{ asset('admin/js/metisMenu.min.js') }}"></script>
 
-        <!-- Morris Charts JavaScript -->
-        <script src="{{ asset('admin/js/raphael.min.js') }}"></script>
-        <script src="{{ asset('admin/js/morris.min.js') }}"></script>
-        <script src="{{ asset('admin/js/morris-data.js') }}"></script>
-
         <!-- Custom Theme JavaScript -->
         <script src="{{ asset('admin/js/startmin.js') }}"></script>
 
+        @yield('page-scripts')
     </body>
 
 </html>

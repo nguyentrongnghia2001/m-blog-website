@@ -602,3 +602,10 @@
         <!-- /.row -->
     </div>
 @stop
+
+@section('page-scripts')
+    <!-- Morris Charts JavaScript -->
+    <script src="{{ asset('admin/js/raphael.min.js') }}"></script>
+    <script src="{{ asset('admin/js/morris.min.js') }}"></script>
+    <script src="{{ asset('admin/js/morris-data.js') }}"></script>
+@endsection
