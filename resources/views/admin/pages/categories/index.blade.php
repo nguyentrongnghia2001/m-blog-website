@@ -15,9 +15,9 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" style="margin-bottom: 10px">
                 <h1 class="page-header">{{ $viewData['title_page'] }}</h1>
-                <button id="createNewCategory" class="btn btn-success">Create New Category</button>
+                <button id="createNewCategory" class="btn btn-primary">Create New Category</button>
             </div>
         </div>
         <div class="row">
@@ -40,8 +40,8 @@
                                             <td>{{ $category->name }}</td>
                                             <td>{{ $category->slug }}</td>
                                             <td>
-                                                <button class="btn btn-sm btn-success editCategoryBtn" data-value="{{ $category }}">Edit</button>
-                                                <button class="btn btn-sm btn-danger deleteCategoryBtn" data-id="{{ $category->id }}">Delete</button>
+                                                <button class="btn btn-success editCategoryBtn" data-value="{{ $category }}">Edit</button>
+                                                <button class="btn btn-danger deleteCategoryBtn" data-id="{{ $category->id }}">Delete</button>
                                             </td>
                                         </tr>
                                     @endforeach
