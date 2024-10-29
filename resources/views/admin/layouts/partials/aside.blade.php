@@ -37,7 +37,7 @@
                 <a href="#"><i class="fa fa-wrench fa-fw"></i> Post Management<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="{{ route('categories.list') }}">Post Categories</a>
+                        <a href="{{ route('categories.index') }}">Post Categories</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->

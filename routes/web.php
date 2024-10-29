@@ -12,8 +12,5 @@ Route::get('/contact', [HomeController::class, 'contact'])->name('web.pages.cont
 
 Route::prefix('admin')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.pages.dashboard.index');
-    Route::resource('categories', PostCategoriesController::class) 
-        ->names([
-            'index' => 'categories.list'
-        ]);
+    Route::resource('categories', PostCategoriesController::class)->names('categories');
 });
